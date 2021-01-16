@@ -71,6 +71,11 @@ TEMPLATES = [
     },
 ]
 
+# REST_FRAMEWORK = {
+#     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+#     'PAGE_SIZE': 1
+# }
+
 WSGI_APPLICATION = 'quiz_proj.wsgi.application'
 
 
