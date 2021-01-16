@@ -41,7 +41,9 @@ INSTALLED_APPS = [
     'rest_framework',
     'quiz.apps.QuizConfig',
     'nested_admin',
-    'users.apps.UsersConfig'
+    'users.apps.UsersConfig',
+    'rest_framework.authtoken',
+    'dj_rest_auth'
 ]
 
 MIDDLEWARE = [
@@ -76,6 +78,14 @@ TEMPLATES = [
 #     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
 #     'PAGE_SIZE': 1
 # }
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        # 'rest_framework.authentication.BasicAuthentication',
+        # 'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.TokenAuthentication',
+    ]
+}
 
 WSGI_APPLICATION = 'quiz_proj.wsgi.application'
 
