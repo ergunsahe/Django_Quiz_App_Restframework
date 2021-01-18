@@ -4,3 +4,8 @@
 - After that install dependecies with: pip install -r .\requirements.txt
 - Then change directory to src, run: py manage.py runserver
 - Finally open your browser and write: http://localhost:8000/
+
+# To check app on heroku
+- link: https://cuw-quiz-proj.herokuapp.com/quiz/
+
+# To run app own local computer please fork repo before changes for deploying on Heroku
